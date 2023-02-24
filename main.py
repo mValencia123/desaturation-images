@@ -19,7 +19,10 @@ for x in range(rows):
 imgDesa = np.uint8(imgDesa)
 imgDesaMin = np.uint8(imgDesaMin)
 imgDesaMax = np.uint8(imgDesaMax)
+imgOpenCV = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
+
 cv.imshow('imgDesa',imgDesa)
 cv.imshow('imgDesaMin',imgDesaMin)
 cv.imshow('imgDesaMax',imgDesaMax)
+cv.imshow('imgOpenCV',imgOpenCV)
 cv.waitKey(0) 
